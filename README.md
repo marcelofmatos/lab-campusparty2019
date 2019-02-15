@@ -156,7 +156,12 @@ sonar.language=py
 sonar.sourceEncoding=UTF-8
 ```
 
-22) Fazer o commit e  push e acompanhar o build no Travis (*é esperado dar sucesso*)
+22) Substituir o arquivo do travis com o travis.yml.3 inserindo a seção de deploy após o build
+
+$ cp -a lab-campusparty2019/travis/travis.yml.3  helloworld/.travis.yml
+
+
+23) Fazer o commit e  push e acompanhar o build no Travis (*é esperado dar sucesso*)
 
 ```
 $ git status
@@ -165,4 +170,4 @@ $ git commit -m "Add SonarCloud Scanner"
 $ git push origin master
 ```
 
-23) Acesse o Dashboard do SonarCloud para analisar seu código.
+24) Acesse o Dashboard do SonarCloud para analisar seu código.
